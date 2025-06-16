@@ -125,3 +125,4 @@ class AbogadoCard(ft.Container):
     def set_current_index_selected_card(self,index_page: int=0):
         self.page.session.set('index_page',self.index_page)
         self.page.go('/profile')
+        self.page.update()

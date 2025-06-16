@@ -31,7 +31,7 @@ class ProfileDetails(ft.Container):
             blur=(8,8),
             content=ft.Column(
                 scroll = ft.ScrollMode.HIDDEN, # ADAPTIVE ,AUTO ,HIDDEN ,ALWAYS
-                height=self.page.window.height-5,
+                height=(self.page.window.height if self.page.window.height else self.page.height) - 5,
                 controls=[
                   ft.Container(
                         border_radius = ft.border_radius.only(top_left = 28, top_right = 28, bottom_left = 28, bottom_right = 28),
