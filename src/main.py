@@ -135,8 +135,8 @@ class flet_box_app:
         self.page.window.top = 3
         self.page.padding = 0
         self.page.spacing = 0
-        self.page.window.height = 720
-        self.page.window.width = 320
+        # self.page.window.height = 720
+        # self.page.window.width = 320
 
         self.page.on_route_change = lambda _: self.on_route_change(
             page = self.page,
